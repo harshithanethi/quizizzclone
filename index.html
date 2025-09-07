@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Interactive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>QuizMaster</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#subjects" class="nav-link">Subjects</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-secondary" onclick="openCreateQuiz()">Create Quiz</button>
+                <button class="btn-secondary">Log In</button>
+                <button class="btn-primary">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Bridge classroom realities and curriculum expectations with the platform that's AI-supported, but teacher-first.</h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary large">Teachers Sign up for free</button>
+                    <button class="btn-outline large">Administrators Get in touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Interactive Learning</h3>
+                    <p>Engage students with dynamic quizzes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects">
+        <div class="container">
+            <h2 class="section-title">Explore Our Subjects</h2>
+            <div class="subjects-grid">
+                <div class="subject-card" data-subject="math">
+                    <div class="subject-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Math</h3>
+                    <p>Build mathematical confidence with every problem solved</p>
+                    <ul>
+                        <li>Scaffolded presentations and videos</li>
+                        <li>Interactive problem-solving tools</li>
+                        <li>Flashcards for formulas and math facts</li>
+                        <li>Assessments that guide students to mastery</li>
+                    </ul>
+                    <button class="btn-primary">Start teaching</button>
+                </div>
+
+                <div class="subject-card" data-subject="science">
+                    <div class="subject-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science</h3>
+                    <p>Spark curiosity and scientific thinking in every lesson</p>
+                    <ul>
+                        <li>Real-world scientific scenarios</li>
+                        <li>Hands-on exploration activities</li>
+                        <li>Scientific vocabulary flashcards</li>
+                        <li>Visual assessments and lab procedures</li>
+                    </ul>
+                    <button class="btn-primary">Start teaching</button>
+                </div>
+
+                <div class="subject-card" data-subject="english">
+                    <div class="subject-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>English Language Arts</h3>
+                    <p>Build confident readers and writers with every ELA resource</p>
+                    <ul>
+                        <li>Reading passages across genres</li>
+                        <li>Interactive writing instruction</li>
+                        <li>Vocabulary building flashcards</li>
+                        <li>Comprehension and grammar assessments</li>
+                    </ul>
+                    <button class="btn-primary">Start teaching</button>
+                </div>
+
+                <div class="subject-card" data-subject="social-studies">
+                    <div class="subject-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Social Studies</h3>
+                    <p>Bring history and civic learning to life in every classroom</p>
+                    <ul>
+                        <li>Standards-aligned presentations</li>
+                        <li>Primary source analysis</li>
+                        <li>Historical timeline activities</li>
+                        <li>Map labeling and sequencing</li>
+                    </ul>
+                    <button class="btn-primary">Start teaching</button>
+                </div>
+
+                <div class="subject-card" data-subject="elementary">
+                    <div class="subject-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Elementary</h3>
+                    <p>Make learning interactive for young students</p>
+                    <ul>
+                        <li>Age-appropriate videos and presentations</li>
+                        <li>Image and audio support</li>
+                        <li>Game-based learning elements</li>
+                        <li>Whole-class instruction tools</li>
+                    </ul>
+                    <button class="btn-primary">Start teaching</button>
+                </div>
+
+                <div class="subject-card" data-subject="test-prep">
+                    <div class="subject-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Test Prep</h3>
+                    <p>Transform test preparation into confident learning</p>
+                    <ul>
+                        <li>Practice assessments mirroring test formats</li>
+                        <li>Targeted skill presentations</li>
+                        <li>Test-taking strategy videos</li>
+                        <li>Performance insights and analytics</li>
+                    </ul>
+                    <button class="btn-primary">Start teaching</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>AI-Powered Generation</h3>
+                    <p>Use AI to differentiate any material so that it's just-right for each student</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Get clear data that celebrates progress and identifies areas for improvement</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborative Learning</h3>
+                    <p>Motivate every student with varied experiences across dozens of formats</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3>Accessibility First</h3>
+                    <p>Assign 25+ modifications and accommodations unique to each student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Hear it from the desks that matter most</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Our Science Curriculum is awesome, but the tests are painful and not engaging for students, so I use QuizMaster to build new assessments. I'm thankful the tools encourage actual knowledge acquisition rather than punitive grades."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Janelle Snyder</h4>
+                            <p>Middle School Teacher (Idaho)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"QuizMaster gives my students the opportunity to interact with the content and not just 'watch me teach'. I have actually taught an entire geometry class exclusively using QuizMaster."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marcus Sanders</h4>
+                            <p>High School Math Teacher (Virginia)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"QuizMaster allows me to see which students are really struggling with a concept, and I can provide extra intervention immediately. My school has improved pass rates by over 20%!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Shaunna Young</h4>
+                            <p>Middle School Science Teacher (Virginia)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Find your way forward</h2>
+                <div class="cta-buttons">
+                    <button class="btn-primary large">Teachers Sign up free</button>
+                    <button class="btn-outline large">Admins Get a quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>QuizMaster</h3>
+                    <p>Empowering educators and students with interactive learning tools.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuizMaster Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
