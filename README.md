@@ -7,4 +7,4 @@ A modern, responsive quizzing website inspired by Quizizz, built with HTML, CSS,
 
 - **HTML5**
 - **CSS**
-- **JavaScript **
+- **JavaScript**
