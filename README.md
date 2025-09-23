@@ -12,7 +12,7 @@ A modern, responsive quizzing website inspired by Quizizz, built with HTML, CSS,
 ## ✨ Features
 
 - **Landing page**: Subjects, features, testimonials, and clear calls to action.
-- **Create quizzes **:
+- **Create quizzes**:
   - Multiple question types: multiple‑choice, true/false, fill‑in‑the‑blank, short answer
   - Per‑question points, time limits, explanations
   - Quiz metadata: title, subject, description, difficulty, time limit, tags, visibility
@@ -21,7 +21,7 @@ A modern, responsive quizzing website inspired by Quizizz, built with HTML, CSS,
   - **Preview** assembled quizzes before saving
   - **Save draft** to `localStorage` (demo persistence)
 - **Join or browse quizzes**: Simple join flow and a browse gallery with difficulty tags
-- **Play quiz **: Interface with timer, progress, selectable options, and Next controls
+- **Play quiz**: Interface with timer, progress, selectable options, and Next controls
 
 ## 🗂️ Project Structure
 ```
